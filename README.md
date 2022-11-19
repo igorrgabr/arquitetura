@@ -1,2 +1,3 @@
-# arquitetura
-repositório dedicado à disciplina de arquitetura de computadores
+# arquitetura de computadores
+
+repositório com projetos feitos na disciplina.

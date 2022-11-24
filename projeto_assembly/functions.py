@@ -5,6 +5,7 @@ def filtro(lista):
     lista = [i.strip(' \n') for i in lista]
     lista.remove('.text')
     lista[0] = lista[0].replace('main:	','')
+    lista = [i.strip('\t') for i in lista]
     lista = [i.replace('$','') for i in lista]
     return lista
 
@@ -148,7 +149,7 @@ def saida(lista):
 
 def decimalToBinary(lista, cond):
     if cond:
-        lista[3] = str(binary_repr(int(lista[3]), width=16))
+        lista[len(lista) - 1] = str(binary_repr(int(lista[len(lista) - 1]), width=16))
     else:
         lista[len(lista) - 1] = str(binary_repr(int(lista[len(lista) - 1]), width=5))
 

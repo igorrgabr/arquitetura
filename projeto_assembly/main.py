@@ -10,4 +10,4 @@ codigos = build.construtor(codigos)
 # saída do .txt
 with open('saida_hex.txt', 'w') as arquivo_saida:
     for i in codigos:
-        arquivo_saida.write(f'{str(i)}\n')
+        arquivo_saida.write(f'{i}\n')
